@@ -27,9 +27,8 @@ class _ThirdScreenState extends State<ThirdScreen> {
   }
 
   void _startColorChange() {
-    _timer = Timer.periodic(const Duration(seconds: 3), (Timer timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (Timer timer) {
       setState(() {
-        // Generate a random color
         _containerColor =
             Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
       });
